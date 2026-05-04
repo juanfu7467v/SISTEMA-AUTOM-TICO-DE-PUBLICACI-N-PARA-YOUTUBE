@@ -228,5 +228,39 @@
       "canal_objetivo": "El Tío Jota",
       "fecha_analisis": "2026-05-04 06:11:29"
     }
+  },
+  {
+    "canal": "El Criterio",
+    "fecha": "2026-05-04",
+    "hora": "10:14:03",
+    "analisis": {
+      "tema_recomendado": "Los Secretos Detrás de las Escenas Icónicas del Cine",
+      "titulo": "Descubre los Misterios Ocultos en las Escenas Más Icónicas del Cine",
+      "idea_contenido": "En este video corto, exploraremos los secretos y curiosidades detrás de algunas de las escenas más famosas en la historia del cine. Desde detalles de producción hasta anécdotas sorprendentes, descubre cómo estas escenas han dejado una huella imborrable en la industria cinematográfica.",
+      "formato_sugerido": "Short",
+      "hora_optima_publicacion": "18:00",
+      "canal": "El Criterio",
+      "categoria": "Cine",
+      "analisis_audiencia": {
+        "temas_solicitados": [
+          "Filosofía",
+          "Historia"
+        ],
+        "sentimiento_general": "positivo",
+        "observaciones_engagement": "A pesar de las variaciones en las vistas, se observa un buen nivel de interacción con los videos recientes, especialmente aquellos relacionados con filosofía e historia."
+      },
+      "interaccion_sugerida": [
+        {
+          "comentario_original": "TOTALMENTE DE ACUERDO......UN PUEBLO QUE NO APRENDE DEL PASADO, PERECE......🙌🏅🙌🎸🎸",
+          "respuesta_sugerida": "¡Gracias por compartir tu pensamiento! En este canal nos esforzamos por aprender de la historia y la filosofía para entender mejor el presente. ¡Esperamos que disfrutes del contenido!"
+        }
+      ],
+      "estilo_contenido": "viral, impactante, directo",
+      "estructura": "gancho + punto clave + llamada a la acción",
+      "hook": "¿Sabías esto sobre...?",
+      "prompt_ia": "Actúa como un experto creador de contenido para YouTube especializado en El Criterio.\n\nOBJETIVO PRINCIPAL:\nCrea un guion que capture la atención desde los primeros segundos y mantenga al espectador enganchado hasta el final. El contenido debe ser viral, impactante, directo.\n\nTEMA: Los Secretos Detrás de las Escenas Icónicas del Cine\nTÍTULO: Descubre los Misterios Ocultos en las Escenas Más Icónicas del Cine\nFORMATO: Short\nDURACIÓN: 30-60 segundos\n\nIDEA DEL CONTENIDO:\nEn este video corto, exploraremos los secretos y curiosidades detrás de algunas de las escenas más famosas en la historia del cine. Desde detalles de producción hasta anécdotas sorprendentes, descubre cómo estas escenas han dejado una huella imborrable en la industria cinematográfica.\n\nINSTRUCCIONES ESPECÍFICAS:\n1. ESTILO: Mantén un tono viral, impactante, directo en todo momento.\n2. ESTRUCTURA: Sigue este orden: gancho + punto clave + llamada a la acción\n3. GANCHO INICIAL: Comienza con una frase impactante que genere curiosidad inmediata (primeros 5 segundos).\n4. CONTENIDO: Utiliza datos interesantes, ejemplos concretos y lenguaje claro que resuene con la audiencia.\n5. RETENCIÓN: Cada sección debe fluir naturalmente hacia la siguiente, evitando caídas en el engagement.\n6. CONCLUSIÓN: Termina con una reflexión memorable o una llamada a la acción que invite a la interacción.\n\nRESULTADO ESPERADO:\nUn guion completo, listo para ser grabado, que sea profesional, entretenido y que maximice la retención de la audiencia.",
+      "canal_objetivo": "El Criterio",
+      "fecha_analisis": "2026-05-04 10:14:02"
+    }
   }
 ]

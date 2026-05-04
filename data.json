@@ -194,5 +194,39 @@
       "canal_objetivo": "El Pensamiento",
       "fecha_analisis": "2026-05-04 00:11:09"
     }
+  },
+  {
+    "canal": "El Tío Jota",
+    "fecha": "2026-05-04",
+    "hora": "06:11:29",
+    "analisis": {
+      "tema_recomendado": "Los Misterios del Imperio Inca: Revelaciones Impactantes",
+      "titulo": "Los Misterios del Imperio Inca: Revelaciones Impactantes",
+      "idea_contenido": "En este video corto, exploraremos los enigmas y secretos más fascinantes del Imperio Inca, desentrañando misterios que perduran en la historia. Desde sus orígenes hasta su misteriosa desaparición, descubriremos información impactante y poco conocida sobre esta gran civilización. ¡Prepárate para un viaje al pasado lleno de revelaciones!",
+      "formato_sugerido": "Short",
+      "hora_optima_publicacion": "19:00",
+      "canal": "El Tío Jota",
+      "categoria": "Historia",
+      "analisis_audiencia": {
+        "temas_solicitados": [
+          "Imperio Inca",
+          "Civilizaciones antiguas"
+        ],
+        "sentimiento_general": "positivo",
+        "observaciones_engagement": "El canal ha tenido un buen rendimiento reciente con videos que generan interacción y reflexión en la audiencia."
+      },
+      "interaccion_sugerida": [
+        {
+          "comentario_original": "I wonder how Quagmire from Family Guy would feel about watching this?",
+          "respuesta_sugerida": "¡Hola! ¡Gracias por tu curiosa perspectiva! Seguro sería interesante ver su reacción ante estos misterios del Imperio Inca. ¡Espero disfrutes del video!"
+        }
+      ],
+      "estilo_contenido": "viral, impactante, directo",
+      "estructura": "gancho + punto clave + llamada a la acción",
+      "hook": "¿Sabías esto sobre...?",
+      "prompt_ia": "Actúa como un experto creador de contenido para YouTube especializado en El Tío Jota.\n\nOBJETIVO PRINCIPAL:\nCrea un guion que capture la atención desde los primeros segundos y mantenga al espectador enganchado hasta el final. El contenido debe ser viral, impactante, directo.\n\nTEMA: Los Misterios del Imperio Inca: Revelaciones Impactantes\nTÍTULO: Los Misterios del Imperio Inca: Revelaciones Impactantes\nFORMATO: Short\nDURACIÓN: 30-60 segundos\n\nIDEA DEL CONTENIDO:\nEn este video corto, exploraremos los enigmas y secretos más fascinantes del Imperio Inca, desentrañando misterios que perduran en la historia. Desde sus orígenes hasta su misteriosa desaparición, descubriremos información impactante y poco conocida sobre esta gran civilización. ¡Prepárate para un viaje al pasado lleno de revelaciones!\n\nINSTRUCCIONES ESPECÍFICAS:\n1. ESTILO: Mantén un tono viral, impactante, directo en todo momento.\n2. ESTRUCTURA: Sigue este orden: gancho + punto clave + llamada a la acción\n3. GANCHO INICIAL: Comienza con una frase impactante que genere curiosidad inmediata (primeros 5 segundos).\n4. CONTENIDO: Utiliza datos interesantes, ejemplos concretos y lenguaje claro que resuene con la audiencia.\n5. RETENCIÓN: Cada sección debe fluir naturalmente hacia la siguiente, evitando caídas en el engagement.\n6. CONCLUSIÓN: Termina con una reflexión memorable o una llamada a la acción que invite a la interacción.\n\nRESULTADO ESPERADO:\nUn guion completo, listo para ser grabado, que sea profesional, entretenido y que maximice la retención de la audiencia.",
+      "canal_objetivo": "El Tío Jota",
+      "fecha_analisis": "2026-05-04 06:11:29"
+    }
   }
 ]

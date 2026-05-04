@@ -160,5 +160,39 @@
       "canal_objetivo": "El Criterio",
       "fecha_analisis": "2026-05-03 18:11:05"
     }
+  },
+  {
+    "canal": "El Pensamiento",
+    "fecha": "2026-05-04",
+    "hora": "00:11:09",
+    "analisis": {
+      "tema_recomendado": "Los Misterios de la Civilización Maya al Descubierto",
+      "titulo": "Descubre los Secretos Ocultos de la Civilización Maya en 5 minutos",
+      "idea_contenido": "En este video corto, exploraremos los enigmas más fascinantes de la civilización Maya, desde su arquitectura hasta sus avances científicos. Con imágenes impactantes y datos sorprendentes, te sumergirás en el legado de esta cultura ancestral y cómo ha impactado en la historia moderna.",
+      "formato_sugerido": "Short",
+      "hora_optima_publicacion": "15:00",
+      "canal": "El Pensamiento",
+      "categoria": "Historia",
+      "analisis_audiencia": {
+        "temas_solicitados": [
+          "Historia Maya",
+          "Civilizaciones Antiguas"
+        ],
+        "sentimiento_general": "positivo",
+        "observaciones_engagement": "Aunque las últimas publicaciones no han tenido mucho alcance, existe un interés positivo por los temas históricos y filosóficos del canal."
+      },
+      "interaccion_sugerida": [
+        {
+          "comentario_original": "¡Excelente video! Me encantaría ver más contenido sobre culturas antiguas.",
+          "respuesta_sugerida": "¡Gracias por tu comentario! Nos alegra que te haya gustado. Estamos preparando más videos sobre civilizaciones antiguas, ¡no te los pierdas!"
+        }
+      ],
+      "estilo_contenido": "viral, impactante, directo",
+      "estructura": "gancho + punto clave + llamada a la acción",
+      "hook": "¿Sabías esto sobre...?",
+      "prompt_ia": "Actúa como un experto creador de contenido para YouTube especializado en El Pensamiento.\n\nOBJETIVO PRINCIPAL:\nCrea un guion que capture la atención desde los primeros segundos y mantenga al espectador enganchado hasta el final. El contenido debe ser viral, impactante, directo.\n\nTEMA: Los Misterios de la Civilización Maya al Descubierto\nTÍTULO: Descubre los Secretos Ocultos de la Civilización Maya en 5 minutos\nFORMATO: Short\nDURACIÓN: 30-60 segundos\n\nIDEA DEL CONTENIDO:\nEn este video corto, exploraremos los enigmas más fascinantes de la civilización Maya, desde su arquitectura hasta sus avances científicos. Con imágenes impactantes y datos sorprendentes, te sumergirás en el legado de esta cultura ancestral y cómo ha impactado en la historia moderna.\n\nINSTRUCCIONES ESPECÍFICAS:\n1. ESTILO: Mantén un tono viral, impactante, directo en todo momento.\n2. ESTRUCTURA: Sigue este orden: gancho + punto clave + llamada a la acción\n3. GANCHO INICIAL: Comienza con una frase impactante que genere curiosidad inmediata (primeros 5 segundos).\n4. CONTENIDO: Utiliza datos interesantes, ejemplos concretos y lenguaje claro que resuene con la audiencia.\n5. RETENCIÓN: Cada sección debe fluir naturalmente hacia la siguiente, evitando caídas en el engagement.\n6. CONCLUSIÓN: Termina con una reflexión memorable o una llamada a la acción que invite a la interacción.\n\nRESULTADO ESPERADO:\nUn guion completo, listo para ser grabado, que sea profesional, entretenido y que maximice la retención de la audiencia.",
+      "canal_objetivo": "El Pensamiento",
+      "fecha_analisis": "2026-05-04 00:11:09"
+    }
   }
 ]

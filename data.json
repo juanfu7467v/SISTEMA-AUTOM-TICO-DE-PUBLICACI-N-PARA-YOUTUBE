@@ -296,5 +296,39 @@
       "canal_objetivo": "El Pensamiento",
       "fecha_analisis": "2026-05-05 11:47:37"
     }
+  },
+  {
+    "canal": "El Tío Jota",
+    "fecha": "2026-05-05",
+    "hora": "11:49:23",
+    "analisis": {
+      "tema_recomendado": "Descubriendo los enigmas de la filosofía estoica",
+      "titulo": "Descubriendo los enigmas de la filosofía estoica",
+      "idea_contenido": "En este video corto, exploraremos los principios fundamentales de la filosofía estoica y cómo aplicarlos en la vida diaria para alcanzar la serenidad y el equilibrio emocional. Descubriremos las enseñanzas de Séneca, Epicteto y Marco Aurelio de una manera accesible y práctica.",
+      "formato_sugerido": "Short",
+      "hora_optima_publicacion": "14:00",
+      "canal": "El Tío Jota",
+      "categoria": "Filosofía",
+      "analisis_audiencia": {
+        "temas_solicitados": [
+          "Filosofía",
+          "Crecimiento personal"
+        ],
+        "sentimiento_general": "positivo",
+        "observaciones_engagement": "El canal ha tenido un buen rendimiento reciente con altos índices de likes y comentarios positivos."
+      },
+      "interaccion_sugerida": [
+        {
+          "comentario_original": "Es refrescante escuchar una visión inteligente en lugar de juicio y vergüenza.",
+          "respuesta_sugerida": "¡Gracias por tu comentario! Nos alegra que encuentres valor en nuestra perspectiva crítica. ¡Esperamos que sigas disfrutando de nuestro contenido!"
+        }
+      ],
+      "estilo_contenido": "viral, impactante, directo",
+      "estructura": "gancho + punto clave + llamada a la acción",
+      "hook": "Espera al final, te sorprenderá...",
+      "prompt_ia": "Actúa como un experto creador de contenido para YouTube especializado en El Tío Jota.\n\nOBJETIVO PRINCIPAL:\nCrea un guion que capture la atención desde los primeros segundos y mantenga al espectador enganchado hasta el final. El contenido debe ser viral, impactante, directo.\n\nTEMA: Descubriendo los enigmas de la filosofía estoica\nTÍTULO: Descubriendo los enigmas de la filosofía estoica\nFORMATO: Short\nDURACIÓN: 30-60 segundos\n\nIDEA DEL CONTENIDO:\nEn este video corto, exploraremos los principios fundamentales de la filosofía estoica y cómo aplicarlos en la vida diaria para alcanzar la serenidad y el equilibrio emocional. Descubriremos las enseñanzas de Séneca, Epicteto y Marco Aurelio de una manera accesible y práctica.\n\nINSTRUCCIONES ESPECÍFICAS:\n1. ESTILO: Mantén un tono viral, impactante, directo en todo momento.\n2. ESTRUCTURA: Sigue este orden: gancho + punto clave + llamada a la acción\n3. GANCHO INICIAL: Comienza con una frase impactante que genere curiosidad inmediata (primeros 5 segundos).\n4. CONTENIDO: Utiliza datos interesantes, ejemplos concretos y lenguaje claro que resuene con la audiencia.\n5. RETENCIÓN: Cada sección debe fluir naturalmente hacia la siguiente, evitando caídas en el engagement.\n6. CONCLUSIÓN: Termina con una reflexión memorable o una llamada a la acción que invite a la interacción.\n\nRESULTADO ESPERADO:\nUn guion completo, listo para ser grabado, que sea profesional, entretenido y que maximice la retención de la audiencia.",
+      "canal_objetivo": "El Tío Jota",
+      "fecha_analisis": "2026-05-05 11:49:22"
+    }
   }
 ]

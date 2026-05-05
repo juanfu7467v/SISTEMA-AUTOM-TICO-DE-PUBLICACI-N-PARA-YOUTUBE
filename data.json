@@ -330,5 +330,39 @@
       "canal_objetivo": "El Tío Jota",
       "fecha_analisis": "2026-05-05 11:49:22"
     }
+  },
+  {
+    "canal": "El Criterio",
+    "fecha": "2026-05-05",
+    "hora": "16:49:27",
+    "analisis": {
+      "tema_recomendado": "Los enigmas filosóficos en el cine contemporáneo",
+      "titulo": "Descifrando los mensajes filosóficos en el cine actual",
+      "idea_contenido": "En este video exploraremos las conexiones entre la filosofía moderna y las películas más recientes, analizando cómo los guiones y personajes reflejan conceptos filosóficos profundos. Descubriremos las lecciones de vida que se esconden detrás de las historias, reflexionando sobre la relación entre el arte cinematográfico y la realidad social actual.",
+      "formato_sugerido": "Video largo",
+      "hora_optima_publicacion": "19:00",
+      "canal": "El Criterio",
+      "categoria": "Cine y Filosofía",
+      "analisis_audiencia": {
+        "temas_solicitados": [
+          "Análisis de películas contemporáneas",
+          "Relación entre cine y filosofía"
+        ],
+        "sentimiento_general": "positivo",
+        "observaciones_engagement": "Aunque las vistas recientes han variado, los videos con temáticas filosóficas suelen tener mejor recepción por parte de la audiencia."
+      },
+      "interaccion_sugerida": [
+        {
+          "comentario_original": "TOTALMENTE DE ACUERDO......UN PUEBLO QUE NO APRENDE DEL PASADO, PERECE.....🙌🦥🙌🏸🏸",
+          "respuesta_sugerida": "¡Gracias por tu comentario! En este video vamos a profundizar en la importancia de aprender de la historia a través del cine y la filosofía. ¡Espero te guste!"
+        }
+      ],
+      "estilo_contenido": "profundo, reflexivo, emocionante",
+      "estructura": "introducción + análisis profundo + conclusiones + reflexión final",
+      "hook": "Descubre los secretos ocultos que nadie notó...",
+      "prompt_ia": "Actúa como un experto creador de contenido para YouTube especializado en El Criterio.\n\nOBJETIVO PRINCIPAL:\nCrea un guion que capture la atención desde los primeros segundos y mantenga al espectador enganchado hasta el final. El contenido debe ser profundo, reflexivo, emocionante.\n\nTEMA: Los enigmas filosóficos en el cine contemporáneo\nTÍTULO: Descifrando los mensajes filosóficos en el cine actual\nFORMATO: Video largo\nDURACIÓN: 12-20 minutos\n\nIDEA DEL CONTENIDO:\nEn este video exploraremos las conexiones entre la filosofía moderna y las películas más recientes, analizando cómo los guiones y personajes reflejan conceptos filosóficos profundos. Descubriremos las lecciones de vida que se esconden detrás de las historias, reflexionando sobre la relación entre el arte cinematográfico y la realidad social actual.\n\nINSTRUCCIONES ESPECÍFICAS:\n1. ESTILO: Mantén un tono profundo, reflexivo, emocionante en todo momento.\n2. ESTRUCTURA: Sigue este orden: introducción + análisis profundo + conclusiones + reflexión final\n3. GANCHO INICIAL: Comienza con una frase impactante que genere curiosidad inmediata (primeros 5 segundos).\n4. CONTENIDO: Utiliza datos interesantes, ejemplos concretos y lenguaje claro que resuene con la audiencia.\n5. RETENCIÓN: Cada sección debe fluir naturalmente hacia la siguiente, evitando caídas en el engagement.\n6. CONCLUSIÓN: Termina con una reflexión memorable o una llamada a la acción que invite a la interacción.\n\nRESULTADO ESPERADO:\nUn guion completo, listo para ser grabado, que sea profesional, entretenido y que maximice la retención de la audiencia.",
+      "canal_objetivo": "El Criterio",
+      "fecha_analisis": "2026-05-05 16:49:26"
+    }
   }
 ]

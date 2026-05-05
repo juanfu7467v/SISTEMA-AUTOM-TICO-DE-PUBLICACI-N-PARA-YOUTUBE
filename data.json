@@ -262,5 +262,39 @@
       "canal_objetivo": "El Criterio",
       "fecha_analisis": "2026-05-04 10:14:02"
     }
+  },
+  {
+    "canal": "El Pensamiento",
+    "fecha": "2026-05-05",
+    "hora": "11:47:37",
+    "analisis": {
+      "tema_recomendado": "Los Secretos de la Sabiduría Ancestral",
+      "titulo": "Descubre los misterios y enseñanzas de la sabiduría ancestral",
+      "idea_contenido": "En este video corto, exploraremos las enseñanzas y secretos de las antiguas civilizaciones, conectando con la sabiduría ancestral que perdura en el tiempo. Descubre cómo estas lecciones pueden aplicarse a nuestra vida moderna para un crecimiento espiritual y personal.",
+      "formato_sugerido": "Short",
+      "hora_optima_publicacion": "18:00",
+      "canal": "El Pensamiento",
+      "categoria": "Sabiduría Ancestral",
+      "analisis_audiencia": {
+        "temas_solicitados": [
+          "Reflexiones rápidas",
+          "Pensamiento crítico"
+        ],
+        "sentimiento_general": "positivo",
+        "observaciones_engagement": "Aunque las vistas recientes son bajas, hay un potencial de interacción positiva con el contenido propuesto."
+      },
+      "interaccion_sugerida": [
+        {
+          "comentario_original": "Me encantaría ver más videos sobre reflexiones profundas",
+          "respuesta_sugerida": "¡Gracias por tu sugerencia! Estamos preparando más contenido reflexivo para ti, ¡no te lo pierdas!"
+        }
+      ],
+      "estilo_contenido": "viral, impactante, directo",
+      "estructura": "gancho + punto clave + llamada a la acción",
+      "hook": "Espera al final, te sorprenderá...",
+      "prompt_ia": "Actúa como un experto creador de contenido para YouTube especializado en El Pensamiento.\n\nOBJETIVO PRINCIPAL:\nCrea un guion que capture la atención desde los primeros segundos y mantenga al espectador enganchado hasta el final. El contenido debe ser viral, impactante, directo.\n\nTEMA: Los Secretos de la Sabiduría Ancestral\nTÍTULO: Descubre los misterios y enseñanzas de la sabiduría ancestral\nFORMATO: Short\nDURACIÓN: 30-60 segundos\n\nIDEA DEL CONTENIDO:\nEn este video corto, exploraremos las enseñanzas y secretos de las antiguas civilizaciones, conectando con la sabiduría ancestral que perdura en el tiempo. Descubre cómo estas lecciones pueden aplicarse a nuestra vida moderna para un crecimiento espiritual y personal.\n\nINSTRUCCIONES ESPECÍFICAS:\n1. ESTILO: Mantén un tono viral, impactante, directo en todo momento.\n2. ESTRUCTURA: Sigue este orden: gancho + punto clave + llamada a la acción\n3. GANCHO INICIAL: Comienza con una frase impactante que genere curiosidad inmediata (primeros 5 segundos).\n4. CONTENIDO: Utiliza datos interesantes, ejemplos concretos y lenguaje claro que resuene con la audiencia.\n5. RETENCIÓN: Cada sección debe fluir naturalmente hacia la siguiente, evitando caídas en el engagement.\n6. CONCLUSIÓN: Termina con una reflexión memorable o una llamada a la acción que invite a la interacción.\n\nRESULTADO ESPERADO:\nUn guion completo, listo para ser grabado, que sea profesional, entretenido y que maximice la retención de la audiencia.",
+      "canal_objetivo": "El Pensamiento",
+      "fecha_analisis": "2026-05-05 11:47:37"
+    }
   }
 ]

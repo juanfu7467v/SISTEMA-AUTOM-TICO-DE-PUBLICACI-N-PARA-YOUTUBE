@@ -364,5 +364,39 @@
       "canal_objetivo": "El Criterio",
       "fecha_analisis": "2026-05-05 16:49:26"
     }
+  },
+  {
+    "canal": "El Pensamiento",
+    "fecha": "2026-05-06",
+    "hora": "03:49:48",
+    "analisis": {
+      "tema_recomendado": "Los Secretos de la Antigua Grecia revelados en 5 minutos",
+      "titulo": "Los Secretos de la Antigua Grecia revelados en 5 minutos",
+      "idea_contenido": "En este Short, exploraremos los misterios y sabiduría de la Antigua Grecia, desde las enseñanzas de Sócrates hasta los mitos más fascinantes. Descubre cómo la filosofía y la cultura griega siguen impactando en la actualidad.",
+      "formato_sugerido": "Short",
+      "hora_optima_publicacion": "16:00",
+      "canal": "El Pensamiento",
+      "categoria": "Historia",
+      "analisis_audiencia": {
+        "temas_solicitados": [
+          "Filosofía",
+          "Historia"
+        ],
+        "sentimiento_general": "positivo",
+        "observaciones_engagement": "Aunque las visualizaciones recientes son bajas, se observa un interés en temáticas relacionadas con la historia y la filosofía."
+      },
+      "interaccion_sugerida": [
+        {
+          "comentario_original": "¡Me encantaría ver un video sobre la filosofía de Aristóteles!",
+          "respuesta_sugerida": "¡Gracias por tu sugerencia! Estamos trabajando en contenido relacionado con la filosofía griega. ¡Esperamos que disfrutes del próximo video!"
+        }
+      ],
+      "estilo_contenido": "viral, impactante, directo",
+      "estructura": "gancho + punto clave + llamada a la acción",
+      "hook": "Esto es lo que nadie te dice sobre...",
+      "prompt_ia": "Actúa como un experto creador de contenido para YouTube especializado en El Pensamiento.\n\nOBJETIVO PRINCIPAL:\nCrea un guion que capture la atención desde los primeros segundos y mantenga al espectador enganchado hasta el final. El contenido debe ser viral, impactante, directo.\n\nTEMA: Los Secretos de la Antigua Grecia revelados en 5 minutos\nTÍTULO: Los Secretos de la Antigua Grecia revelados en 5 minutos\nFORMATO: Short\nDURACIÓN: 30-60 segundos\n\nIDEA DEL CONTENIDO:\nEn este Short, exploraremos los misterios y sabiduría de la Antigua Grecia, desde las enseñanzas de Sócrates hasta los mitos más fascinantes. Descubre cómo la filosofía y la cultura griega siguen impactando en la actualidad.\n\nINSTRUCCIONES ESPECÍFICAS:\n1. ESTILO: Mantén un tono viral, impactante, directo en todo momento.\n2. ESTRUCTURA: Sigue este orden: gancho + punto clave + llamada a la acción\n3. GANCHO INICIAL: Comienza con una frase impactante que genere curiosidad inmediata (primeros 5 segundos).\n4. CONTENIDO: Utiliza datos interesantes, ejemplos concretos y lenguaje claro que resuene con la audiencia.\n5. RETENCIÓN: Cada sección debe fluir naturalmente hacia la siguiente, evitando caídas en el engagement.\n6. CONCLUSIÓN: Termina con una reflexión memorable o una llamada a la acción que invite a la interacción.\n\nRESULTADO ESPERADO:\nUn guion completo, listo para ser grabado, que sea profesional, entretenido y que maximice la retención de la audiencia.",
+      "canal_objetivo": "El Pensamiento",
+      "fecha_analisis": "2026-05-06 03:49:48"
+    }
   }
 ]

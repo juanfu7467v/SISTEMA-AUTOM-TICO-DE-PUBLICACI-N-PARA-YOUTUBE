@@ -398,5 +398,39 @@
       "canal_objetivo": "El Pensamiento",
       "fecha_analisis": "2026-05-06 03:49:48"
     }
+  },
+  {
+    "canal": "El Tío Jota",
+    "fecha": "2026-05-06",
+    "hora": "09:49:54",
+    "analisis": {
+      "tema_recomendado": "Explorando la Sabiduría del Imperio Inca",
+      "titulo": "Descubriendo los Secretos Ocultos del Imperio Inca",
+      "idea_contenido": "En este video corto, exploraremos la fascinante historia y sabiduría del Imperio Inca, desentrañando misterios y revelando curiosidades poco conocidas. Sumérgete en la grandeza de esta civilización antigua y descubre lecciones valiosas para aplicar en tu vida diaria.",
+      "formato_sugerido": "Short",
+      "hora_optima_publicacion": "15:00",
+      "canal": "El Tío Jota",
+      "categoria": "Historia",
+      "analisis_audiencia": {
+        "temas_solicitados": [
+          "Imperio Inca",
+          "civilizaciones antiguas"
+        ],
+        "sentimiento_general": "positivo",
+        "observaciones_engagement": "El canal ha tenido un buen rendimiento reciente con altos índices de likes y visualizaciones en videos relacionados con crecimiento personal y reflexiones profundas."
+      },
+      "interaccion_sugerida": [
+        {
+          "comentario_original": "I wonder how Quagmire from Family Guy would feel about watching this?",
+          "respuesta_sugerida": "¡Gracias por tu comentario! Sería interesante conocer la perspectiva de Quagmire sobre la historia del Imperio Inca. ¡Esperamos que disfrutes del video!"
+        }
+      ],
+      "estilo_contenido": "viral, impactante, directo",
+      "estructura": "gancho + punto clave + llamada a la acción",
+      "hook": "Esto es lo que nadie te dice sobre...",
+      "prompt_ia": "Actúa como un experto creador de contenido para YouTube especializado en El Tío Jota.\n\nOBJETIVO PRINCIPAL:\nCrea un guion que capture la atención desde los primeros segundos y mantenga al espectador enganchado hasta el final. El contenido debe ser viral, impactante, directo.\n\nTEMA: Explorando la Sabiduría del Imperio Inca\nTÍTULO: Descubriendo los Secretos Ocultos del Imperio Inca\nFORMATO: Short\nDURACIÓN: 30-60 segundos\n\nIDEA DEL CONTENIDO:\nEn este video corto, exploraremos la fascinante historia y sabiduría del Imperio Inca, desentrañando misterios y revelando curiosidades poco conocidas. Sumérgete en la grandeza de esta civilización antigua y descubre lecciones valiosas para aplicar en tu vida diaria.\n\nINSTRUCCIONES ESPECÍFICAS:\n1. ESTILO: Mantén un tono viral, impactante, directo en todo momento.\n2. ESTRUCTURA: Sigue este orden: gancho + punto clave + llamada a la acción\n3. GANCHO INICIAL: Comienza con una frase impactante que genere curiosidad inmediata (primeros 5 segundos).\n4. CONTENIDO: Utiliza datos interesantes, ejemplos concretos y lenguaje claro que resuene con la audiencia.\n5. RETENCIÓN: Cada sección debe fluir naturalmente hacia la siguiente, evitando caídas en el engagement.\n6. CONCLUSIÓN: Termina con una reflexión memorable o una llamada a la acción que invite a la interacción.\n\nRESULTADO ESPERADO:\nUn guion completo, listo para ser grabado, que sea profesional, entretenido y que maximice la retención de la audiencia.",
+      "canal_objetivo": "El Tío Jota",
+      "fecha_analisis": "2026-05-06 09:49:54"
+    }
   }
 ]

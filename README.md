@@ -1,63 +1,57 @@
-# 📺 Sistema Automático de Publicación para YouTube - Canal "El Tío Jota"
+# 📺 Sistema Automático de Análisis para YouTube - El Tío Jota
 
-Este sistema avanzado automatiza la gestión de contenidos para YouTube, integrando análisis de tendencias, inteligencia artificial y un flujo de trabajo optimizado para despliegue en Fly.io.
+Este sistema avanzado automatiza la gestión de contenidos para YouTube, integrando análisis de tendencias, inteligencia artificial (OpenAI) y un flujo de trabajo optimizado para despliegue en Fly.io con rotación automática de canales.
 
 ## ✨ Novedades y Mejoras Clave
 
-El sistema ha sido significativamente mejorado para un funcionamiento más autónomo y eficiente, enfocado en la detección de tendencias y la generación de recomendaciones:
+El sistema ha sido actualizado para ser completamente autónomo, eficiente y estable:
 
-*   **Análisis de Tendencias con YouTube Data API**: Utiliza los métodos `videoCategories` y `videos.list` (con `chart='mostPopular'`) de la YouTube Data API para identificar las tendencias actuales de YouTube. Esto permite al sistema analizar qué contenido está siendo popular en tiempo real.
-*   **Generación de Recomendaciones con Gemini 2.5 Flash**: Se ha integrado el modelo de inteligencia artificial `gemini-2.5-flash` para analizar las tendencias obtenidas y generar recomendaciones estratégicas de contenido. Estas recomendaciones incluyen un tema, título, idea de contenido, formato sugerido, hora óptima de publicación y el canal de destino (`ID_CANAL`, `ID_CANAL_2` o `ID_CANAL_3`).
-*   **Envío de Recomendaciones a Servidor Externo**: Las recomendaciones generadas se envían automáticamente a un servidor externo (`https://crear-videos-subir-youtuve.fly.dev/`) mediante una petición POST en formato JSON, reemplazando la comunicación vía Telegram.
-*   **Funcionamiento Elástico en Fly.io**: Configurado para un despliegue eficiente en Fly.io, utilizando `auto_stop_machines` para que el servidor se apague automáticamente después de completar su tarea, minimizando el consumo de recursos.
-*   **Activación Diaria Autónoma**: El sistema se activa diariamente a las 5:00 AM (UTC) mediante un GitHub Action, que realiza una llamada HTTP al endpoint `/start-autonomous-job` para iniciar el proceso de análisis y generación de recomendaciones.
-*   **Multithreading para Eficiencia**: Los procesos de análisis y generación se ejecutan en hilos separados para asegurar una respuesta rápida y un procesamiento eficiente.
+*   **Motor de IA Único (OpenAI)**: Se ha eliminado por completo la integración con Gemini AI. Ahora, el sistema utiliza exclusivamente OpenAI para realizar análisis profundos de tendencias y generar recomendaciones estratégicas.
+*   **Automatización cada 5 Horas**: El sistema está diseñado para activarse cada 5 horas mediante una petición al endpoint `/start-autonomous-job`.
+*   **Flujo de Trabajo Rotativo**: En cada ejecución, el sistema revisa el archivo `data.json` para identificar qué canal fue analizado previamente y continúa automáticamente con el siguiente canal pendiente en la lista configurada.
+*   **Gestión de Recursos y Keep-Alive**: 
+    *   **Keep-Alive**: Durante la ejecución de procesos pesados, el sistema utiliza un mecanismo interno de `/keep-alive` para evitar que la máquina se suspenda prematuramente.
+    *   **Auto-Sleep**: Una vez completado el análisis y enviado el reporte, la máquina se apaga automáticamente (`os._exit(0)`) para ahorrar recursos, quedando lista para la siguiente petición.
+*   **Análisis de Tendencias con YouTube Data API**: Utiliza la YouTube Data API para validar temas populares y asegurar que las recomendaciones tengan un alto potencial de visualizaciones.
+*   **Envío de Recomendaciones**: Los resultados se envían automáticamente a un servidor externo mediante una petición POST en formato JSON.
 
 ## 🚀 Flujo de Trabajo Automatizado
 
-1.  **Activación Diaria**: Un GitHub Action programado llama al endpoint `/start-autonomous-job` del servidor en Fly.io a las 5:00 AM (UTC).
-2.  **Análisis de Tendencias**: El sistema utiliza la YouTube Data API para obtener las categorías de video y los videos más populares del momento.
-3.  **Generación de Recomendaciones**: Gemini 2.5 Flash analiza los datos de tendencias y genera una recomendación de contenido detallada en formato JSON.
-4.  **Envío de Datos**: La recomendación en formato JSON se envía al servidor externo (`https://crear-videos-subir-youtuve.fly.dev/`).
-5.  **Apagado Automático**: Una vez completado el proceso, el servidor en Fly.io entra en modo de reposo profundo gracias a la configuración `auto_stop_machines`, consumiendo casi cero recursos hasta la próxima activación.
+1.  **Activación**: Una petición externa (ej. GitHub Action cada 5 horas) llama al endpoint `/start-autonomous-job`.
+2.  **Rotación de Canales**: El sistema determina el siguiente canal a analizar basándose en el historial de `data.json`.
+3.  **Análisis y Validación**: Se obtienen tendencias y se validan mediante YouTube Search para asegurar un tráfico potencial > 100k vistas.
+4.  **Generación con OpenAI**: Se genera una recomendación detallada (título viral, idea de contenido, formato, etc.).
+5.  **Persistencia y Envío**: Se guarda el progreso en `data.json` (enviado a GitHub) y se reporta al servidor de destino.
+6.  **Apagado Seguro**: El sistema finaliza su ejecución y libera recursos hasta la próxima llamada.
 
-## ⚙️ Configuración y Despliegue en Fly.io
+## ⚙️ Configuración y Despliegue
 
-### Requisitos
+### Requisitos (Variables de Entorno)
 
-Para el correcto funcionamiento del sistema, se requieren las siguientes variables de entorno:
+*   `YOUTUBE_API_KEY`: Clave de API de Google Cloud.
+*   `OPENAI_API_KEY`: Clave de API de OpenAI (reemplaza a Gemini).
+*   `GITHUB_TOKEN` y `GITHUB_REPO`: Para la persistencia del historial en `data.json`.
+*   `ID_CANAL`, `ID_CANAL_2`, `ID_CANAL_3`: IDs de los canales configurados.
 
-*   `YOUTUBE_API_KEY`: Clave de API de Google Cloud con acceso a YouTube Data API v3.
-*   `GEMINI_API_KEY`: Clave de API para Google AI Studio (necesaria para el modelo `gemini-2.5-flash`).
-*   `ID_CANAL`: ID del primer canal de YouTube al que se pueden enviar recomendaciones.
-*   `ID_CANAL_2`: ID del segundo canal de YouTube al que se pueden enviar recomendaciones.
-*   `ID_CANAL_3`: ID del tercer canal de YouTube al que se pueden enviar recomendaciones.
+### Activación Programada (GitHub Actions)
 
-### Despliegue
-
-El sistema está configurado para ser desplegado en Fly.io. El archivo `fly.toml` ya incluye la configuración necesaria para el auto-apagado y el nombre de la aplicación (`sistema-analisis-canales`).
-
-### Activación Diaria con GitHub Actions
-
-Para la activación diaria, **debes crear manualmente** el siguiente archivo en tu repositorio de GitHub en la ruta `.github/workflows/daily_activation.yml`:
+Se recomienda configurar un workflow en `.github/workflows/autonomous_job.yml` con la siguiente estructura:
 
 ```yaml
-name: Activación Diaria Sistema YouTube
+name: Automatización cada 5 horas
 
 on:
   schedule:
-    # 5:00 AM UTC (Ajusta según tu zona horaria si es necesario)
-    - cron: '0 5 * * *'
-  workflow_dispatch: # Permite ejecutarlo manualmente para probar
+    - cron: '0 */5 * * *'
+  workflow_dispatch:
 
 jobs:
   activate:
     runs-on: ubuntu-latest
     steps:
-      - name: Llamar al Endpoint de Fly.io
+      - name: Despertar y Ejecutar Job
         run: |
-          curl -X POST https://sistema-analisis-canales.fly.dev/start-autonomous-job \
-          -H "Content-Type: application/json"
+          curl -X POST https://tu-app-en-fly.fly.dev/start-autonomous-job
 ```
 
 ---

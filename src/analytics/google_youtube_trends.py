@@ -4,7 +4,6 @@ import json
 import time
 from googleapiclient.discovery import build
 from datetime import datetime
-from src.utils.gemini_manager import GeminiManager
 from src.utils.openai_manager import OpenAIManager
 
 logger = logging.getLogger(__name__)
@@ -43,7 +42,7 @@ def _get_youtube_search_views(query):
         for item in videos_stats.get("items", []):
             total_views += int(item["statistics"].get("viewCount", 0))
         
-        avg_views = total_views / len(video_ids)
+        avg_views = total_views / len(video_ids) if video_ids else 0
         logger.info(f"✓ Validación de vistas en YouTube para {query}: {avg_views:.0f} vistas promedio.")
         return avg_views
 
@@ -53,7 +52,7 @@ def _get_youtube_search_views(query):
 
 def _transform_title_with_ia(trend_topic):
     """
-    Usa IA para transformar una tendencia en un título emocional y viral.
+    Usa OpenAI para transformar una tendencia en un título emocional y viral.
     """
     prompt = f"""
     Actúa como un experto en marketing viral de YouTube. 
@@ -71,18 +70,11 @@ def _transform_title_with_ia(trend_topic):
     Salida (solo el título transformado, sin comillas):
     """
 
-    def _execute_gemini(client):
-        model_id = "gemini-2.0-flash"
-        response = client.models.generate_content(model=model_id, contents=prompt)
-        return response.text.strip().replace('"', '')
-
-    def _execute_openai_fallback():
-        response_text = OpenAIManager.analyze_with_fallback(prompt)
-        return response_text.strip().replace('"', '') if response_text else None
-
     try:
-        result = GeminiManager.call_with_rotation(_execute_gemini, fallback_func=_execute_openai_fallback)
-        return result if result else trend_topic
+        response_text = OpenAIManager.analyze_with_fallback(prompt)
+        if response_text:
+            return response_text.strip().replace('"', '')
+        return trend_topic
     except Exception as e:
         logger.error(f"Error crítico al transformar título con IA para {trend_topic}: {e}")
         return trend_topic
@@ -149,7 +141,7 @@ def get_validated_trends(channel_id=None):
                         logger.warning(f"No se pudieron obtener comentarios para el video {v_id}: {ce}")
 
         # 2. Usar IA para identificar temas sugeridos o temas estratégicos
-        logger.info("Generando temas estratégicos y analizando comentarios con IA...")
+        logger.info("Generando temas estratégicos y analizando comentarios con OpenAI...")
         
         prompt_topics = f"""
         Genera una lista de 8 temas potenciales para videos de YouTube.
@@ -169,22 +161,10 @@ def get_validated_trends(channel_id=None):
         Responde ÚNICAMENTE con una lista de 8 temas cortos, uno por línea.
         """
 
-        def _execute_gemini_topics(client):
-            model_id = "gemini-2.0-flash"
-            response = client.models.generate_content(model=model_id, contents=prompt_topics)
-            extracted_topics = response.text.strip().split('\n')
-            return [t.strip('- ').strip() for t in extracted_topics if t.strip()]
-
-        def _execute_openai_topics_fallback():
-            response_text = OpenAIManager.analyze_with_fallback(prompt_topics)
-            if response_text:
-                extracted_topics = response_text.strip().split('\n')
-                return [t.strip('- ').strip() for t in extracted_topics if t.strip()]
-            return None
-
-        generated_topics = GeminiManager.call_with_rotation(_execute_gemini_topics, fallback_func=_execute_openai_topics_fallback)
-        if generated_topics:
-            potential_topics = generated_topics
+        response_text = OpenAIManager.analyze_with_fallback(prompt_topics)
+        if response_text:
+            extracted_topics = response_text.strip().split('\n')
+            potential_topics = [t.strip('- ').strip() for t in extracted_topics if t.strip()]
             logger.info(f"✓ Temas potenciales generados: {potential_topics}")
 
     except Exception as e:

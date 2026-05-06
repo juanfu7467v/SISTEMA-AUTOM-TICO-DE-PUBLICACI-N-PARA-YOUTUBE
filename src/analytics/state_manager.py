@@ -105,13 +105,7 @@ def _get_analysis_history(filename="data.json"):
 def has_channel_been_analyzed_today(channel_name, filename="data.json"):
     """
     Verifica si un canal ya ha sido analizado hoy.
-    
-    Args:
-        channel_name (str): Nombre del canal
-            filename (str): Nombre del archivo de datos
-    
-    Returns:
-        bool: True si ya fue analizado hoy, False en caso contrario
+    NOTA: Esta función se mantiene por compatibilidad pero ya no bloquea el flujo autónomo.
     """
     try:
         history = _get_analysis_history(filename)

@@ -8,7 +8,7 @@ from datetime import datetime
 from src.analytics.google_youtube_trends import get_validated_trends
 from src.analytics.ai_analyzer import analyze_trends_and_recommend
 from src.analytics.channel_config import get_channel_config
-from src.analytics.state_manager import get_next_channel_to_analyze, has_channel_been_analyzed_today
+from src.analytics.state_manager import get_next_channel_to_analyze
 from src.utils.github_storage import save_to_github_json
 
 logger = logging.getLogger(__name__)
@@ -16,49 +16,49 @@ logger = logging.getLogger(__name__)
 def run_autonomous_job():
     """
     Inicia el proceso autónomo en un hilo separado.
-    
-    La activación ocurre únicamente por peticiones externas al endpoint.
-    No hay temporizadores internos.
     """
     job_thread = threading.Thread(target=_job_execution)
     job_thread.start()
     return {"status": "Job de análisis profundo iniciado en background"}, 202
 
+def _send_keep_alive():
+    """
+    Envía peticiones al endpoint /keep-alive para evitar que la máquina se duerma durante el trabajo.
+    """
+    port = os.getenv("PORT", "8080")
+    url = f"http://localhost:{port}/keep-alive"
+    while getattr(threading.current_thread(), "do_run", True):
+        try:
+            requests.get(url, timeout=5)
+            logger.debug("Keep-alive enviado.")
+        except Exception:
+            pass
+        time.sleep(60) # Cada minuto
+
 def _job_execution():
     """
     Ejecución del job autónomo.
-    
-    Lógica:
-    1. Determina qué canal analizar basándose en el historial (data.json)
-    2. Si el canal ya fue analizado hoy, intenta con el siguiente
-    3. Analiza el canal seleccionado
-    4. Guarda el resultado en data.json
-    5. Envía el reporte al servidor externo
-    6. Se detiene el sistema para ahorrar recursos
     """
     logger.info("=" * 80)
     logger.info("Iniciando ejecución del job autónomo (activado por petición externa)")
     logger.info("=" * 80)
 
+    # Iniciar hilo de keep-alive
+    keep_alive_thread = threading.Thread(target=_send_keep_alive)
+    keep_alive_thread.do_run = True
+    keep_alive_thread.start()
+
     target_url = os.getenv("TARGET_URL", "https://crear-videos-subir-youtuve.fly.dev/trigger-video")
 
-    # Determinar qué canal analizar
+    # Determinar qué canal analizar (rotación automática)
     channel_name = get_next_channel_to_analyze()
-    
-    # Verificar si ya fue analizado hoy
-    if has_channel_been_analyzed_today(channel_name):
-        logger.warning(f"El canal '{channel_name}' ya fue analizado hoy.")
-        logger.info("Finalizando proceso para ahorrar recursos...")
-        logger.info("=" * 80)
-        _shutdown_system()
-        return
     
     # Obtener configuración del canal
     channel_config = get_channel_config(channel_name)
     if not channel_config:
         logger.error(f"No se encontró configuración para el canal: {channel_name}")
         logger.info("=" * 80)
-        _shutdown_system()
+        _stop_keep_alive_and_shutdown(keep_alive_thread)
         return
     
     channel_id = channel_config.get("id")
@@ -70,15 +70,13 @@ def _job_execution():
         trends = get_validated_trends(channel_id=channel_id)
         if not trends:
             logger.error(f"No se pudieron obtener las tendencias de YouTube para {channel_name}.")
-            logger.info("=" * 80)
             return
 
-        # 2. Generar recomendaciones profundas usando Gemini (con fallback a OpenAI)
+        # 2. Generar recomendaciones profundas usando OpenAI
         logger.info(f"Generando recomendaciones profundas para {channel_name}...")
         recommendation = analyze_trends_and_recommend(trends, channel_name=channel_name)
         if not recommendation:
             logger.error(f"No se pudo generar la recomendación profunda para {channel_name}.")
-            logger.info("=" * 80)
             return
 
         # Asegurar campos requeridos
@@ -112,18 +110,17 @@ def _job_execution():
     
     finally:
         logger.info("=" * 80)
-        _shutdown_system()
+        _stop_keep_alive_and_shutdown(keep_alive_thread)
+
+def _stop_keep_alive_and_shutdown(thread):
+    """Detiene el keep-alive y apaga el sistema."""
+    thread.do_run = False
+    _shutdown_system()
 
 def _shutdown_system():
     """
     Intenta detener la máquina o el proceso de forma segura.
-    En entornos como Fly.io o Docker, terminar el proceso principal 
-    suele ser suficiente para que la instancia entre en reposo o se detenga.
     """
     logger.info("Iniciando secuencia de apagado automático...")
-    # Pequeña espera para asegurar que los logs se envíen
     time.sleep(5)
-    
-    # En Fly.io, terminar el proceso principal (PID 1) detiene la máquina
-    # Intentamos salir del proceso de Python. Si Flask está corriendo, esto matará el servidor.
     os._exit(0)

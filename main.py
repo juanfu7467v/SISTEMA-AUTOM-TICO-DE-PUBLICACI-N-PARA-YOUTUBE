@@ -21,10 +21,17 @@ app = Flask(__name__)
 def health_check():
     return "Sistema Automático YouTube El Tío Jota Activo", 200
 
+@app.route('/keep-alive', methods=['GET'])
+def keep_alive():
+    """
+    Endpoint para mantener la máquina despierta durante procesos pesados.
+    """
+    return jsonify({"status": "alive"}), 200
+
 @app.route('/start-autonomous-job', methods=['POST', 'GET'])
 def start_job():
     """
-    Endpoint llamado por GitHub Actions para iniciar el proceso autónomo.
+    Endpoint llamado cada 5 horas para iniciar el proceso autónomo.
     """
     logger.info("Recibida petición para iniciar el job autónomo.")
     result, status_code = run_autonomous_job()

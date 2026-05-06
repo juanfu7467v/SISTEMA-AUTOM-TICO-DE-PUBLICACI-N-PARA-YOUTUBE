@@ -1,7 +1,6 @@
 import os
 import json
 import logging
-from src.utils.gemini_manager import GeminiManager
 from src.utils.openai_manager import OpenAIManager
 from src.analytics.channel_config import get_channel_config
 from src.analytics.content_strategy import get_content_type_for_day, build_enhanced_recommendation
@@ -10,10 +9,10 @@ logger = logging.getLogger(__name__)
 
 def analyze_trends_and_recommend(trends_data, channel_name=None):
     """
-    Utiliza Gemini (con fallback a OpenAI GPT-3.5 Turbo) para realizar un análisis profundo.
+    Utiliza OpenAI para realizar un análisis profundo.
     """
     
-    # Preparar el contexto y el prompt (común para ambas IAs)
+    # Preparar el contexto y el prompt
     config = get_channel_config(channel_name)
     content_config = get_content_type_for_day(channel_name)
     formato_hoy = content_config.get("formato")
@@ -88,17 +87,6 @@ def analyze_trends_and_recommend(trends_data, channel_name=None):
     }}
     """
 
-    def _execute_gemini(client):
-        model_id = "gemini-2.0-flash"
-        response = client.models.generate_content(model=model_id, contents=prompt)
-        return _parse_and_enrich_response(response.text, channel_name, formato_hoy, content_config)
-
-    def _execute_openai_fallback():
-        response_text = OpenAIManager.analyze_with_fallback(prompt)
-        if response_text:
-            return _parse_and_enrich_response(response_text, channel_name, formato_hoy, content_config)
-        return None
-
     def _parse_and_enrich_response(text, channel_name, formato_hoy, content_config):
         clean_text = text.strip()
         if clean_text.startswith("```json"):
@@ -106,17 +94,23 @@ def analyze_trends_and_recommend(trends_data, channel_name=None):
         elif clean_text.startswith("```"):
             clean_text = clean_text[3:-3].strip()
 
-        recommendation = json.loads(clean_text)
-        recommendation["canal"] = channel_name
-        recommendation["formato_sugerido"] = formato_hoy
-        return build_enhanced_recommendation(recommendation, content_config)
+        try:
+            recommendation = json.loads(clean_text)
+            recommendation["canal"] = channel_name
+            recommendation["formato_sugerido"] = formato_hoy
+            return build_enhanced_recommendation(recommendation, content_config)
+        except Exception as e:
+            logger.error(f"Error al parsear JSON de OpenAI: {e}")
+            return None
 
     try:
-        # Intentar con Gemini y fallback a OpenAI
-        result = GeminiManager.call_with_rotation(_execute_gemini, fallback_func=_execute_openai_fallback)
-        if not result:
-            logger.error("No se pudo completar el análisis con ninguna IA (Gemini/OpenAI).")
-        return result
+        logger.info(f"Generando recomendación con OpenAI para {channel_name}...")
+        response_text = OpenAIManager.analyze_with_fallback(prompt)
+        if response_text:
+            return _parse_and_enrich_response(response_text, channel_name, formato_hoy, content_config)
+        else:
+            logger.error("OpenAI no devolvió ninguna respuesta.")
+            return None
 
     except Exception as e:
         logger.error(f"Error crítico en el análisis de IA: {e}")

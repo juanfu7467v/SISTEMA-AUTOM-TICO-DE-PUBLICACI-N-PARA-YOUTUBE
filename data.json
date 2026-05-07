@@ -534,5 +534,39 @@
       "canal_objetivo": "El Tío Jota",
       "fecha_analisis": "2026-05-07 03:50:25"
     }
+  },
+  {
+    "canal": "El Criterio",
+    "fecha": "2026-05-07",
+    "hora": "03:52:33",
+    "analisis": {
+      "tema_recomendado": "Los Enigmas de Diógenes: La Filosofía más Cínica",
+      "titulo": "Descubre los Misterios de Diógenes: El Filósofo más Cínico",
+      "idea_contenido": "En este video corto, exploraremos la vida y las ideas del filósofo Diógenes, conocido por su estilo de vida radicalmente simple y su crítica a la sociedad. Analizaremos sus enseñanzas filosóficas desde una perspectiva contemporánea, destacando su impacto en la historia del pensamiento crítico.",
+      "formato_sugerido": "Short",
+      "hora_optima_publicacion": "15:00",
+      "canal": "El Criterio",
+      "categoria": "Filosofía",
+      "analisis_audiencia": {
+        "temas_solicitados": [
+          "Sócrates",
+          "Maquiavelo"
+        ],
+        "sentimiento_general": "positivo",
+        "observaciones_engagement": "Aunque la audiencia es receptiva, se observa una baja interacción en términos de likes y comentarios en los videos recientes."
+      },
+      "interaccion_sugerida": [
+        {
+          "comentario_original": "TOTALMENTE DE ACUERDO......UN PUEBLO QUE NO APRENDE DEL PASADO, PERECE.....🙌🧥🎸🎸",
+          "respuesta_sugerida": "¡Gracias por tu reflexión! En este video exploraremos más sobre cómo el pensamiento filosófico puede guiarnos en el presente. ¡Esperamos que lo disfrutes!"
+        }
+      ],
+      "estilo_contenido": "viral, impactante, directo",
+      "estructura": "gancho + punto clave + llamada a la acción",
+      "hook": "Mira esto, es increíble...",
+      "prompt_ia": "Actúa como un experto creador de contenido para YouTube especializado en El Criterio.\n\nOBJETIVO PRINCIPAL:\nCrea un guion que capture la atención desde los primeros segundos y mantenga al espectador enganchado hasta el final. El contenido debe ser viral, impactante, directo.\n\nTEMA: Los Enigmas de Diógenes: La Filosofía más Cínica\nTÍTULO: Descubre los Misterios de Diógenes: El Filósofo más Cínico\nFORMATO: Short\nDURACIÓN: 30-60 segundos\n\nIDEA DEL CONTENIDO:\nEn este video corto, exploraremos la vida y las ideas del filósofo Diógenes, conocido por su estilo de vida radicalmente simple y su crítica a la sociedad. Analizaremos sus enseñanzas filosóficas desde una perspectiva contemporánea, destacando su impacto en la historia del pensamiento crítico.\n\nINSTRUCCIONES ESPECÍFICAS:\n1. ESTILO: Mantén un tono viral, impactante, directo en todo momento.\n2. ESTRUCTURA: Sigue este orden: gancho + punto clave + llamada a la acción\n3. GANCHO INICIAL: Comienza con una frase impactante que genere curiosidad inmediata (primeros 5 segundos).\n4. CONTENIDO: Utiliza datos interesantes, ejemplos concretos y lenguaje claro que resuene con la audiencia.\n5. RETENCIÓN: Cada sección debe fluir naturalmente hacia la siguiente, evitando caídas en el engagement.\n6. CONCLUSIÓN: Termina con una reflexión memorable o una llamada a la acción que invite a la interacción.\n\nRESULTADO ESPERADO:\nUn guion completo, listo para ser grabado, que sea profesional, entretenido y que maximice la retención de la audiencia.",
+      "canal_objetivo": "El Criterio",
+      "fecha_analisis": "2026-05-07 03:52:31"
+    }
   }
 ]

@@ -665,5 +665,39 @@
       "canal_objetivo": "El Criterio",
       "fecha_analisis": "2026-05-07 14:18:53"
     }
+  },
+  {
+    "canal": "CHANNEL_NAME_3",
+    "fecha": "2026-05-07",
+    "hora": "19:18:57",
+    "analisis": {
+      "tema_recomendado": "Los Grandes Misterios de la Mente Antigua",
+      "titulo": "Descifrando los Enigmas del Pensamiento Antiguo",
+      "idea_contenido": "En este Short exploraremos los enigmas y misterios que rodean la mente de las antiguas civilizaciones, analizando cómo abordaban el pensamiento y la sabiduría. Descubre las increíbles prácticas y creencias que han perdurado a lo largo del tiempo.",
+      "formato_sugerido": "Short",
+      "hora_optima_publicacion": "13:00",
+      "canal": "CHANNEL_NAME_3",
+      "categoria": "Historia",
+      "analisis_audiencia": {
+        "temas_solicitados": [
+          "Filosofía antigua",
+          "Civilizaciones antiguas"
+        ],
+        "sentimiento_general": "positivo",
+        "observaciones_engagement": "Aunque las vistas recientes son bajas, el contenido sigue generando interés en la audiencia."
+      },
+      "interaccion_sugerida": [
+        {
+          "comentario_original": "¡Me encantaría ver más contenido sobre filosofía antigua!",
+          "respuesta_sugerida": "¡Gracias por tu interés! Estamos preparando más videos sobre la filosofía y civilizaciones antiguas, ¡no te los pierdas!"
+        }
+      ],
+      "estilo_contenido": "viral, impactante, directo",
+      "estructura": "gancho + punto clave + llamada a la acción",
+      "hook": "Mira esto, es increíble...",
+      "prompt_ia": "Actúa como un experto creador de contenido para YouTube especializado en CHANNEL_NAME_3.\n\nOBJETIVO PRINCIPAL:\nCrea un guion que capture la atención desde los primeros segundos y mantenga al espectador enganchado hasta el final. El contenido debe ser viral, impactante, directo.\n\nTEMA: Los Grandes Misterios de la Mente Antigua\nTÍTULO: Descifrando los Enigmas del Pensamiento Antiguo\nFORMATO: Short\nDURACIÓN: 30-60 segundos\n\nIDEA DEL CONTENIDO:\nEn este Short exploraremos los enigmas y misterios que rodean la mente de las antiguas civilizaciones, analizando cómo abordaban el pensamiento y la sabiduría. Descubre las increíbles prácticas y creencias que han perdurado a lo largo del tiempo.\n\nINSTRUCCIONES ESPECÍFICAS:\n1. ESTILO: Mantén un tono viral, impactante, directo en todo momento.\n2. ESTRUCTURA: Sigue este orden: gancho + punto clave + llamada a la acción\n3. GANCHO INICIAL: Comienza con una frase impactante que genere curiosidad inmediata (primeros 5 segundos).\n4. CONTENIDO: Utiliza datos interesantes, ejemplos concretos y lenguaje claro que resuene con la audiencia.\n5. RETENCIÓN: Cada sección debe fluir naturalmente hacia la siguiente, evitando caídas en el engagement.\n6. CONCLUSIÓN: Termina con una reflexión memorable o una llamada a la acción que invite a la interacción.\n\nRESULTADO ESPERADO:\nUn guion completo, listo para ser grabado, que sea profesional, entretenido y que maximice la retención de la audiencia.",
+      "canal_objetivo": "CHANNEL_NAME_3",
+      "fecha_analisis": "2026-05-07 19:18:57"
+    }
   }
 ]

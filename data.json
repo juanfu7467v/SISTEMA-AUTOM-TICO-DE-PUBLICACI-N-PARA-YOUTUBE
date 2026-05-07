@@ -500,5 +500,39 @@
       "canal_objetivo": "El Pensamiento",
       "fecha_analisis": "2026-05-06 21:50:10"
     }
+  },
+  {
+    "canal": "El Tío Jota",
+    "fecha": "2026-05-07",
+    "hora": "03:50:26",
+    "analisis": {
+      "tema_recomendado": "Descubre la sabiduría ancestral de los pensadores griegos",
+      "titulo": "Un viaje a la mente de Sócrates, Diógenes y Maquiavelo",
+      "idea_contenido": "En este Short, exploraremos las enseñanzas y pensamientos revolucionarios de Sócrates, Diógenes y Maquiavelo. Descubriremos cómo sus ideas siguen siendo relevantes en la actualidad y cómo pueden transformar nuestra perspectiva de la vida y el mundo que nos rodea. Un viaje intelectual que desafiará tus creencias y te inspirará a reflexionar profundamente.",
+      "formato_sugerido": "Short",
+      "hora_optima_publicacion": "14:00",
+      "canal": "El Tío Jota",
+      "categoria": "Filosofía",
+      "analisis_audiencia": {
+        "temas_solicitados": [
+          "Filosofía",
+          "Historia"
+        ],
+        "sentimiento_general": "positivo",
+        "observaciones_engagement": "Los videos recientes han generado un alto nivel de interacción y comentarios positivos, lo que indica un buen engagement con la audiencia."
+      },
+      "interaccion_sugerida": [
+        {
+          "comentario_original": "I just have to thank for moving away from the clickbaity titles/thumbnails. I understand one has to take into account the algorithm, but it's refreshing to let viewers get curious about a video rather than figuratively scream at us to watch it.",
+          "respuesta_sugerida": "¡Gracias por tu apoyo y comprensión! Nos esforzamos por ofrecer contenido auténtico y valioso para nuestra comunidad. ¡Esperamos que disfrutes del viaje intelectual que tenemos preparado para ti!"
+        }
+      ],
+      "estilo_contenido": "viral, impactante, directo",
+      "estructura": "gancho + punto clave + llamada a la acción",
+      "hook": "Mira esto, es increíble...",
+      "prompt_ia": "Actúa como un experto creador de contenido para YouTube especializado en El Tío Jota.\n\nOBJETIVO PRINCIPAL:\nCrea un guion que capture la atención desde los primeros segundos y mantenga al espectador enganchado hasta el final. El contenido debe ser viral, impactante, directo.\n\nTEMA: Descubre la sabiduría ancestral de los pensadores griegos\nTÍTULO: Un viaje a la mente de Sócrates, Diógenes y Maquiavelo\nFORMATO: Short\nDURACIÓN: 30-60 segundos\n\nIDEA DEL CONTENIDO:\nEn este Short, exploraremos las enseñanzas y pensamientos revolucionarios de Sócrates, Diógenes y Maquiavelo. Descubriremos cómo sus ideas siguen siendo relevantes en la actualidad y cómo pueden transformar nuestra perspectiva de la vida y el mundo que nos rodea. Un viaje intelectual que desafiará tus creencias y te inspirará a reflexionar profundamente.\n\nINSTRUCCIONES ESPECÍFICAS:\n1. ESTILO: Mantén un tono viral, impactante, directo en todo momento.\n2. ESTRUCTURA: Sigue este orden: gancho + punto clave + llamada a la acción\n3. GANCHO INICIAL: Comienza con una frase impactante que genere curiosidad inmediata (primeros 5 segundos).\n4. CONTENIDO: Utiliza datos interesantes, ejemplos concretos y lenguaje claro que resuene con la audiencia.\n5. RETENCIÓN: Cada sección debe fluir naturalmente hacia la siguiente, evitando caídas en el engagement.\n6. CONCLUSIÓN: Termina con una reflexión memorable o una llamada a la acción que invite a la interacción.\n\nRESULTADO ESPERADO:\nUn guion completo, listo para ser grabado, que sea profesional, entretenido y que maximice la retención de la audiencia.",
+      "canal_objetivo": "El Tío Jota",
+      "fecha_analisis": "2026-05-07 03:50:25"
+    }
   }
 ]

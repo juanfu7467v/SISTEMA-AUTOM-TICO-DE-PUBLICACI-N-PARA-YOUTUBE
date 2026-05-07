@@ -631,5 +631,39 @@
       "canal_objetivo": "El Tío Jota",
       "fecha_analisis": "2026-05-07 09:50:33"
     }
+  },
+  {
+    "canal": "El Criterio",
+    "fecha": "2026-05-07",
+    "hora": "14:18:53",
+    "analisis": {
+      "tema_recomendado": "El Misterio del Estoicismo: Lecciones para la Vida",
+      "titulo": "El Misterio del Estoicismo: Lecciones para la Vida",
+      "idea_contenido": "Descubre los principios fundamentales del Estoicismo y cómo aplicarlos en la vida diaria. Explora la filosofía de Séneca, Marco Aurelio y Epicteto para encontrar la serenidad y la sabiduría en tiempos modernos. Reflexiona sobre la importancia de la virtud, el control emocional y la aceptación de lo inevitable. Un video inspirador y motivador para mejorar tu bienestar emocional y mental.",
+      "formato_sugerido": "Short",
+      "hora_optima_publicacion": "17:00",
+      "canal": "El Criterio",
+      "categoria": "Filosofía",
+      "analisis_audiencia": {
+        "temas_solicitados": [
+          "Estoicismo",
+          "Filosofía práctica"
+        ],
+        "sentimiento_general": "positivo",
+        "observaciones_engagement": "Audiencia interesada en temas filosóficos y reflexiones profundas, con un nivel de interacción moderado."
+      },
+      "interaccion_sugerida": [
+        {
+          "comentario_original": "TOTALMENTE DE ACUERDO......UN PUEBLO QUE NO APRENDE DEL PASADO, PERECE.....🙌🏅🙌🎸🎸",
+          "respuesta_sugerida": "¡Gracias por compartir tu reflexión! El Estoicismo nos enseña valiosas lecciones sobre la importancia de aprender de la historia para un mejor futuro. ¡Sigue disfrutando del contenido!"
+        }
+      ],
+      "estilo_contenido": "viral, impactante, directo",
+      "estructura": "gancho + punto clave + llamada a la acción",
+      "hook": "Mira esto, es increíble...",
+      "prompt_ia": "Actúa como un experto creador de contenido para YouTube especializado en El Criterio.\n\nOBJETIVO PRINCIPAL:\nCrea un guion que capture la atención desde los primeros segundos y mantenga al espectador enganchado hasta el final. El contenido debe ser viral, impactante, directo.\n\nTEMA: El Misterio del Estoicismo: Lecciones para la Vida\nTÍTULO: El Misterio del Estoicismo: Lecciones para la Vida\nFORMATO: Short\nDURACIÓN: 30-60 segundos\n\nIDEA DEL CONTENIDO:\nDescubre los principios fundamentales del Estoicismo y cómo aplicarlos en la vida diaria. Explora la filosofía de Séneca, Marco Aurelio y Epicteto para encontrar la serenidad y la sabiduría en tiempos modernos. Reflexiona sobre la importancia de la virtud, el control emocional y la aceptación de lo inevitable. Un video inspirador y motivador para mejorar tu bienestar emocional y mental.\n\nINSTRUCCIONES ESPECÍFICAS:\n1. ESTILO: Mantén un tono viral, impactante, directo en todo momento.\n2. ESTRUCTURA: Sigue este orden: gancho + punto clave + llamada a la acción\n3. GANCHO INICIAL: Comienza con una frase impactante que genere curiosidad inmediata (primeros 5 segundos).\n4. CONTENIDO: Utiliza datos interesantes, ejemplos concretos y lenguaje claro que resuene con la audiencia.\n5. RETENCIÓN: Cada sección debe fluir naturalmente hacia la siguiente, evitando caídas en el engagement.\n6. CONCLUSIÓN: Termina con una reflexión memorable o una llamada a la acción que invite a la interacción.\n\nRESULTADO ESPERADO:\nUn guion completo, listo para ser grabado, que sea profesional, entretenido y que maximice la retención de la audiencia.",
+      "canal_objetivo": "El Criterio",
+      "fecha_analisis": "2026-05-07 14:18:53"
+    }
   }
 ]

@@ -28,7 +28,7 @@ CHANNEL_CONFIGS = {
         "website_promo": "https://masitaprex.com/PeliPREX",
         "order": 2
     },
-    "El Pensamiento": {
+    "CHANNEL_NAME_3": {
         "id": os.getenv("ID_CANAL_3", "UC_EL_PENSAMIENTO_ID"),
         "topics": [
             "Reflexiones sobre la vida",

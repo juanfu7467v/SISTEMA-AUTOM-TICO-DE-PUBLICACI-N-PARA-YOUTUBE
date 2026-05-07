@@ -568,5 +568,34 @@
       "canal_objetivo": "El Criterio",
       "fecha_analisis": "2026-05-07 03:52:31"
     }
+  },
+  {
+    "canal": "CHANNEL_NAME_3",
+    "fecha": "2026-05-07",
+    "hora": "09:18:46",
+    "analisis": {
+      "tema_recomendado": "Los Misterios de la Mente: Descubriendo el Poder de la Neurociencia",
+      "titulo": "Los Misterios de la Mente: Descubriendo el Poder de la Neurociencia",
+      "idea_contenido": "Sumérgete en el fascinante mundo de la neurociencia y explora cómo nuestra mente influye en nuestras decisiones diarias. Descubre los secretos detrás de la toma de decisiones, la memoria y la percepción desde una perspectiva científica y práctica. Aprende cómo aplicar estos conocimientos para mejorar tu vida y alcanzar un mayor crecimiento personal.",
+      "formato_sugerido": "Short",
+      "hora_optima_publicacion": "14:00",
+      "canal": "CHANNEL_NAME_3",
+      "categoria": "Psicología aplicada",
+      "analisis_audiencia": {
+        "temas_solicitados": [
+          "Neurociencia aplicada",
+          "Crecimiento personal"
+        ],
+        "sentimiento_general": "positivo",
+        "observaciones_engagement": "Aunque las últimas publicaciones han tenido un alcance bajo, se observa interés por contenido reflexivo y profundo."
+      },
+      "interaccion_sugerida": [],
+      "estilo_contenido": "viral, impactante, directo",
+      "estructura": "gancho + punto clave + llamada a la acción",
+      "hook": "Mira esto, es increíble...",
+      "prompt_ia": "Actúa como un experto creador de contenido para YouTube especializado en CHANNEL_NAME_3.\n\nOBJETIVO PRINCIPAL:\nCrea un guion que capture la atención desde los primeros segundos y mantenga al espectador enganchado hasta el final. El contenido debe ser viral, impactante, directo.\n\nTEMA: Los Misterios de la Mente: Descubriendo el Poder de la Neurociencia\nTÍTULO: Los Misterios de la Mente: Descubriendo el Poder de la Neurociencia\nFORMATO: Short\nDURACIÓN: 30-60 segundos\n\nIDEA DEL CONTENIDO:\nSumérgete en el fascinante mundo de la neurociencia y explora cómo nuestra mente influye en nuestras decisiones diarias. Descubre los secretos detrás de la toma de decisiones, la memoria y la percepción desde una perspectiva científica y práctica. Aprende cómo aplicar estos conocimientos para mejorar tu vida y alcanzar un mayor crecimiento personal.\n\nINSTRUCCIONES ESPECÍFICAS:\n1. ESTILO: Mantén un tono viral, impactante, directo en todo momento.\n2. ESTRUCTURA: Sigue este orden: gancho + punto clave + llamada a la acción\n3. GANCHO INICIAL: Comienza con una frase impactante que genere curiosidad inmediata (primeros 5 segundos).\n4. CONTENIDO: Utiliza datos interesantes, ejemplos concretos y lenguaje claro que resuene con la audiencia.\n5. RETENCIÓN: Cada sección debe fluir naturalmente hacia la siguiente, evitando caídas en el engagement.\n6. CONCLUSIÓN: Termina con una reflexión memorable o una llamada a la acción que invite a la interacción.\n\nRESULTADO ESPERADO:\nUn guion completo, listo para ser grabado, que sea profesional, entretenido y que maximice la retención de la audiencia.",
+      "canal_objetivo": "CHANNEL_NAME_3",
+      "fecha_analisis": "2026-05-07 09:18:46"
+    }
   }
 ]

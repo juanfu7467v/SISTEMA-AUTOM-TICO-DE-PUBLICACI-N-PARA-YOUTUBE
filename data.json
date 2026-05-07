@@ -597,5 +597,39 @@
       "canal_objetivo": "CHANNEL_NAME_3",
       "fecha_analisis": "2026-05-07 09:18:46"
     }
+  },
+  {
+    "canal": "El Tío Jota",
+    "fecha": "2026-05-07",
+    "hora": "09:50:33",
+    "analisis": {
+      "tema_recomendado": "Descubriendo los Misterios del Estoicismo en el Imperio Inca",
+      "titulo": "Descubriendo los Misterios del Estoicismo en el Imperio Inca",
+      "idea_contenido": "En este video corto, exploraremos la conexión entre el Estoicismo y la sabiduría del Imperio Inca, analizando cómo estas filosofías ancestrales pueden aplicarse en la vida moderna. Descubriremos enseñanzas profundas y reflexiones rápidas para potenciar el crecimiento personal a través de la historia y la filosofía.",
+      "formato_sugerido": "Short",
+      "hora_optima_publicacion": "17:00",
+      "canal": "El Tío Jota",
+      "categoria": "Filosofía e Historia",
+      "analisis_audiencia": {
+        "temas_solicitados": [
+          "Filosofía",
+          "Historia"
+        ],
+        "sentimiento_general": "positivo",
+        "observaciones_engagement": "Los temas recientes han generado interacción positiva y comentarios reflexivos por parte de la audiencia."
+      },
+      "interaccion_sugerida": [
+        {
+          "comentario_original": "I wish this was longer! Or a documentary series, fascinating ❤",
+          "respuesta_sugerida": "¡Gracias por tu apoyo! Estamos considerando expandir este tema en futuros videos. ¡Mantente atento a más contenido emocionante!"
+        }
+      ],
+      "estilo_contenido": "viral, impactante, directo",
+      "estructura": "gancho + punto clave + llamada a la acción",
+      "hook": "Mira esto, es increíble...",
+      "prompt_ia": "Actúa como un experto creador de contenido para YouTube especializado en El Tío Jota.\n\nOBJETIVO PRINCIPAL:\nCrea un guion que capture la atención desde los primeros segundos y mantenga al espectador enganchado hasta el final. El contenido debe ser viral, impactante, directo.\n\nTEMA: Descubriendo los Misterios del Estoicismo en el Imperio Inca\nTÍTULO: Descubriendo los Misterios del Estoicismo en el Imperio Inca\nFORMATO: Short\nDURACIÓN: 30-60 segundos\n\nIDEA DEL CONTENIDO:\nEn este video corto, exploraremos la conexión entre el Estoicismo y la sabiduría del Imperio Inca, analizando cómo estas filosofías ancestrales pueden aplicarse en la vida moderna. Descubriremos enseñanzas profundas y reflexiones rápidas para potenciar el crecimiento personal a través de la historia y la filosofía.\n\nINSTRUCCIONES ESPECÍFICAS:\n1. ESTILO: Mantén un tono viral, impactante, directo en todo momento.\n2. ESTRUCTURA: Sigue este orden: gancho + punto clave + llamada a la acción\n3. GANCHO INICIAL: Comienza con una frase impactante que genere curiosidad inmediata (primeros 5 segundos).\n4. CONTENIDO: Utiliza datos interesantes, ejemplos concretos y lenguaje claro que resuene con la audiencia.\n5. RETENCIÓN: Cada sección debe fluir naturalmente hacia la siguiente, evitando caídas en el engagement.\n6. CONCLUSIÓN: Termina con una reflexión memorable o una llamada a la acción que invite a la interacción.\n\nRESULTADO ESPERADO:\nUn guion completo, listo para ser grabado, que sea profesional, entretenido y que maximice la retención de la audiencia.",
+      "canal_objetivo": "El Tío Jota",
+      "fecha_analisis": "2026-05-07 09:50:33"
+    }
   }
 ]

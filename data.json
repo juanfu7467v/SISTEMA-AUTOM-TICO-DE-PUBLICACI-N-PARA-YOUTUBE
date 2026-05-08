@@ -733,5 +733,39 @@
       "canal_objetivo": "El Tío Jota",
       "fecha_analisis": "2026-05-08 00:19:09"
     }
+  },
+  {
+    "canal": "El Criterio",
+    "fecha": "2026-05-08",
+    "hora": "05:19:25",
+    "analisis": {
+      "tema_recomendado": "Misterios y Leyendas de la Antigua Grecia",
+      "titulo": "Descubre los Secretos Ocultos de la Antigua Grecia que te Dejarán Asombrado",
+      "idea_contenido": "En este video exploraremos los enigmas y mitos más fascinantes de la Antigua Grecia, desde las leyendas de dioses y héroes hasta los misterios de la filosofía y la cultura griega. Sumérgete en un viaje único a través de la historia y descubre los secretos ocultos que han perdurado en el tiempo.",
+      "formato_sugerido": "Short",
+      "hora_optima_publicacion": "16:00",
+      "canal": "El Criterio",
+      "categoria": "Historia",
+      "analisis_audiencia": {
+        "temas_solicitados": [
+          "Misterios de la Antigua Grecia",
+          "Filosofía griega"
+        ],
+        "sentimiento_general": "positivo",
+        "observaciones_engagement": "Los videos recientes han tenido una buena interacción, especialmente el análisis sobre Sócrates."
+      },
+      "interaccion_sugerida": [
+        {
+          "comentario_original": "TOTALMENTE DE ACUERDO......UN PUEBLO QUE NO APRENDE DEL PASADO, PERECE.....🙌🏅🙌🏸",
+          "respuesta_sugerida": "¡Gracias por tu comentario! Estamos completamente de acuerdo en la importancia de aprender del pasado para construir un mejor presente. ¡Esperamos que disfrutes de nuestro próximo video sobre los misterios de la Antigua Grecia!"
+        }
+      ],
+      "estilo_contenido": "viral, impactante, directo",
+      "estructura": "gancho + punto clave + llamada a la acción",
+      "hook": "No puedes creer lo que pasó con...",
+      "prompt_ia": "Actúa como un experto creador de contenido para YouTube especializado en El Criterio.\n\nOBJETIVO PRINCIPAL:\nCrea un guion que capture la atención desde los primeros segundos y mantenga al espectador enganchado hasta el final. El contenido debe ser viral, impactante, directo.\n\nTEMA: Misterios y Leyendas de la Antigua Grecia\nTÍTULO: Descubre los Secretos Ocultos de la Antigua Grecia que te Dejarán Asombrado\nFORMATO: Short\nDURACIÓN: 30-60 segundos\n\nIDEA DEL CONTENIDO:\nEn este video exploraremos los enigmas y mitos más fascinantes de la Antigua Grecia, desde las leyendas de dioses y héroes hasta los misterios de la filosofía y la cultura griega. Sumérgete en un viaje único a través de la historia y descubre los secretos ocultos que han perdurado en el tiempo.\n\nINSTRUCCIONES ESPECÍFICAS:\n1. ESTILO: Mantén un tono viral, impactante, directo en todo momento.\n2. ESTRUCTURA: Sigue este orden: gancho + punto clave + llamada a la acción\n3. GANCHO INICIAL: Comienza con una frase impactante que genere curiosidad inmediata (primeros 5 segundos).\n4. CONTENIDO: Utiliza datos interesantes, ejemplos concretos y lenguaje claro que resuene con la audiencia.\n5. RETENCIÓN: Cada sección debe fluir naturalmente hacia la siguiente, evitando caídas en el engagement.\n6. CONCLUSIÓN: Termina con una reflexión memorable o una llamada a la acción que invite a la interacción.\n\nRESULTADO ESPERADO:\nUn guion completo, listo para ser grabado, que sea profesional, entretenido y que maximice la retención de la audiencia.",
+      "canal_objetivo": "El Criterio",
+      "fecha_analisis": "2026-05-08 05:19:24"
+    }
   }
 ]

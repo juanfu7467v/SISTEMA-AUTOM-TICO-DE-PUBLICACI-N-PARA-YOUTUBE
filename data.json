@@ -801,5 +801,39 @@
       "canal_objetivo": "CHANNEL_NAME_3",
       "fecha_analisis": "2026-05-08 10:20:10"
     }
+  },
+  {
+    "canal": "El Tío Jota",
+    "fecha": "2026-05-08",
+    "hora": "15:19:45",
+    "analisis": {
+      "tema_recomendado": "Descubriendo la verdad detrás de la filosofía Estoica",
+      "titulo": "Secretos del Estoicismo: ¿Cómo aplicar sus enseñanzas en la vida diaria?",
+      "idea_contenido": "En este video corto, exploraremos los principios fundamentales del Estoicismo y cómo podemos incorporarlos para mejorar nuestro crecimiento personal. Analizaremos las enseñanzas de Séneca, Epicteto y Marco Aurelio, destacando su relevancia en la sociedad actual. Además, daremos ejemplos prácticos de cómo aplicar estas filosofías en situaciones cotidianas para alcanzar la tranquilidad y la sabiduría.",
+      "formato_sugerido": "Short",
+      "hora_optima_publicacion": "18:00",
+      "canal": "El Tío Jota",
+      "categoria": "Filosofía",
+      "analisis_audiencia": {
+        "temas_solicitados": [
+          "Filosofía Estoica",
+          "Crecimiento personal"
+        ],
+        "sentimiento_general": "positivo",
+        "observaciones_engagement": "El público ha mostrado interés en temas profundos y reflexivos, con una participación activa en los comentarios."
+      },
+      "interaccion_sugerida": [
+        {
+          "comentario_original": "I think of the rice theory of Japanese character that it's nice and cool",
+          "respuesta_sugerida": "¡Gracias por compartir tu perspectiva! ¿Te gustaría ver un análisis más profundo sobre alguna otra teoría o filosofía en futuros videos?"
+        }
+      ],
+      "estilo_contenido": "viral, impactante, directo",
+      "estructura": "gancho + punto clave + llamada a la acción",
+      "hook": "No puedes creer lo que pasó con...",
+      "prompt_ia": "Actúa como un experto creador de contenido para YouTube especializado en El Tío Jota.\n\nOBJETIVO PRINCIPAL:\nCrea un guion que capture la atención desde los primeros segundos y mantenga al espectador enganchado hasta el final. El contenido debe ser viral, impactante, directo.\n\nTEMA: Descubriendo la verdad detrás de la filosofía Estoica\nTÍTULO: Secretos del Estoicismo: ¿Cómo aplicar sus enseñanzas en la vida diaria?\nFORMATO: Short\nDURACIÓN: 30-60 segundos\n\nIDEA DEL CONTENIDO:\nEn este video corto, exploraremos los principios fundamentales del Estoicismo y cómo podemos incorporarlos para mejorar nuestro crecimiento personal. Analizaremos las enseñanzas de Séneca, Epicteto y Marco Aurelio, destacando su relevancia en la sociedad actual. Además, daremos ejemplos prácticos de cómo aplicar estas filosofías en situaciones cotidianas para alcanzar la tranquilidad y la sabiduría.\n\nINSTRUCCIONES ESPECÍFICAS:\n1. ESTILO: Mantén un tono viral, impactante, directo en todo momento.\n2. ESTRUCTURA: Sigue este orden: gancho + punto clave + llamada a la acción\n3. GANCHO INICIAL: Comienza con una frase impactante que genere curiosidad inmediata (primeros 5 segundos).\n4. CONTENIDO: Utiliza datos interesantes, ejemplos concretos y lenguaje claro que resuene con la audiencia.\n5. RETENCIÓN: Cada sección debe fluir naturalmente hacia la siguiente, evitando caídas en el engagement.\n6. CONCLUSIÓN: Termina con una reflexión memorable o una llamada a la acción que invite a la interacción.\n\nRESULTADO ESPERADO:\nUn guion completo, listo para ser grabado, que sea profesional, entretenido y que maximice la retención de la audiencia.",
+      "canal_objetivo": "El Tío Jota",
+      "fecha_analisis": "2026-05-08 15:19:45"
+    }
   }
 ]
